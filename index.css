@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+td input{
+    cursor: pointer;
+}
+table{
+    width: 300px;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 5px;
+    border-radius: 3px;
+}
+td:not([class="display"]){
+    display: inline-block;
+    width:calc(25% - 10px);
+    height: 100%;
+    margin: 5px;
+}
+input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(214,214,214);
+    border-radius: 5px;
+}
+input[type="text"]{
+    width: 100%;
+    margin: 5px auto;
+    background-color: transparent;
+    font-weight:bold ;
+}
+input[type="button"]{
+    box-shadow: 1px 1px 4px rgba(214, 214, 214 , 0.8) ;
+}
+input[type="button"]:active{
+    transform:scale(0.95);
+}
+input.number{
+    background-color: #fff;
+}
+input.operator{
+    background-color: #eee;
+    font-weight: bold;
+}
